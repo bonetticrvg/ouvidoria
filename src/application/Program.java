@@ -41,19 +41,23 @@ public class Program {
 		Pessoa pessoa = new Pessoa(nome, email, celular);
 		
 		int menu = 0;
-		System.out.println();
-		System.out.println(marcadores);
-		System.out.println("           Informe qual opcao voce deseja: ");
-		System.out.println(marcadores);
-		System.out.println();
-		System.out.println("1 - Inserir manifestacao | 2 - Listar manifestacao | 3 - Sair");
-		System.out.println();
-		System.out.print("Sua opcao: ");
-		menu = sc.nextInt();
 		
 		while (menu != 3) {
+			
+			System.out.println();
+			System.out.println(marcadores);
+			System.out.println("           Informe qual opcao voce deseja: ");
+			System.out.println(marcadores);
+			System.out.println();
+			System.out.println("1 - Inserir manifestacao | 2 - Listar manifestacao | 3 - Sair");
+			System.out.println();
+			System.out.print("Sua opcao: ");
+			menu = sc.nextInt();
+			
 			switch(menu) {
+			
 			case 1:{
+				
 				System.out.println();
 				System.out.println("Você escolheu a opcao inserir manifestacao");
 				System.out.println();
@@ -65,6 +69,7 @@ public class Program {
 				System.out.println();
 				System.out.print("Sua opcao: ");
 				int tipo = sc.nextInt();
+				
 				switch(tipo) {
 				case 1:{
 					System.out.println();
@@ -79,15 +84,6 @@ public class Program {
 					nReclamacoes++;
 					System.out.println();
 					System.out.println("Reclamacao cadastrada com sucesso!");
-					System.out.println();
-					System.out.println(marcadores);
-					System.out.println("           Informe qual opcao voce deseja: ");
-					System.out.println(marcadores);
-					System.out.println();
-					System.out.println("1 - Inserir manifestacao | 2 - Listar manifestacao | 3 - Sair");
-					System.out.println();
-					System.out.print("Sua opcao: ");
-					menu = sc.nextInt();
 				}
 				break;
 				case 2:{
@@ -103,15 +99,6 @@ public class Program {
 					nElogios++;
 					System.out.println();
 					System.out.println("Elogio cadastrado com sucesso!");
-					System.out.println();
-					System.out.println(marcadores);
-					System.out.println("          Informe qual opcao voce deseja: ");
-					System.out.println(marcadores);
-					System.out.println();
-					System.out.println("1 - Inserir manifestacao | 2 - Listar manifestacao | 3 - Sair");
-					System.out.println();
-					System.out.print("Sua opcao: ");
-					menu = sc.nextInt();
 				}
 				break;
 				case 3:{
@@ -127,15 +114,6 @@ public class Program {
 					nSugestoes++;
 					System.out.println();
 					System.out.println("Sugestao cadastrada com sucesso!");
-					System.out.println();
-					System.out.println(marcadores);
-					System.out.println("         Informe qual opcao voce deseja: ");
-					System.out.println(marcadores);
-					System.out.println();
-					System.out.println("1 - Inserir manifestacao | 2 - Listar manifestacao | 3 - Sair");
-					System.out.println();
-					System.out.print("Sua opcao: ");
-					menu = sc.nextInt();
 				}
 				break;
 				}
@@ -188,15 +166,6 @@ public class Program {
 					}
 					
 				}
-				System.out.println();
-				System.out.println(marcadores);
-				System.out.println("           Informe qual opcao voce deseja: ");
-				System.out.println(marcadores);
-				System.out.println();
-				System.out.println("1 - Inserir manifestacao | 2 - Listar manifestacao | 3 - Sair");
-				System.out.println();
-				System.out.print("Sua opcao: ");
-				menu = sc.nextInt();
 			}
 			break;
 			}	
